@@ -32,6 +32,7 @@ def menuJuego():
             continue
 
         if eleccionJugador in [1, 2, 3]:
+            os.system('cls')
             ejecucionJuego(eleccionJugador)
         else:
             input("Has introducido una opción inválida, vuelve a intentarlo...")
@@ -39,7 +40,8 @@ def menuJuego():
 def ejecucionJuego(eleccionJugador):
     eleccionMaquina = random.randint(1,3)
 
-    print(f"La máquina eligió: {trasformarNumNombre(eleccionMaquina)}")
+    print(f"Has elegido: {trasformarNumNombre(eleccionJugador)}")
+    print(f"La máquina eligió: {trasformarNumNombre(eleccionMaquina)}\n")
 
     if eleccionJugador == eleccionMaquina:
         print("Habeis empatado!")
@@ -48,7 +50,14 @@ def ejecucionJuego(eleccionJugador):
     else:
         print("La máquina ha ganado.")
         
-    input("\nPulsa para seguir jugando...")
+    seguirJugando = input("Quieres seguir jugando? (S / N ): ").upper()
+    
+    if seguirJugando == "S" :
+        menuJuego()
+    elif seguirJugando == "N" :
+        salir()
+    else :
+        input("Has introducido una opción incorrecta. Selecciona una opcion valida...\n")
         
 bienvenidaJuego()
     
@@ -57,16 +66,16 @@ while True:
     print("--- Menu de Piedra Papel Tijeras ---\n")
     print("A. Para comenzar el juego\n")
     print("B. Consultar las reglas\n ")
-    print("C. Salir del juego")
+    print("Escribe 'SALIR' para salir del juego\n")
     
-    opcionElegida = input("\nSelecciona una opcion ( A / B / C ): ")
+    opcionElegida = input("\nSelecciona una opcion ( A / B / SALIR ): ").upper()
     os.system('cls')
     
     if opcionElegida == "A" :
-        menuJuego()
+        menuJuego ()
     elif opcionElegida == "B" :
         mostrarReglas()
-    elif opcionElegida == "C" :
+    elif opcionElegida == "SALIR" :
         salir()
         break
     else : 
