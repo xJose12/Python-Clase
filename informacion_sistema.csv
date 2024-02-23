@@ -1,2 +1,2 @@
-IP              ,Hostname        ,MAC               ,Nombre Procesador             ,Frecuencia Procesador ,Numero Nucleos ,Cantidad RAM ,% RAM libre ,Comprobar Root ,Puerto SSH ,Puerto HTTP ,Puerto SMTP - IMAP ,Ultimo Logon
-192.168.1.28/24 ,ldap.29asix.com ,08:00:27:01:ba:6f ,AMD Ryzen 7 5800H with Radeon ,             3193.918 ,             4 ,"3,8Gi"      ,"49,3087"   ,True           ,True       ,True        ,False              ,00:59-Fri-23-Feb
+IP,Hostname,MAC,Nombre Usuario,Nombre Procesador,Frecuencia Procesador,Numero Nucleos,Cantidad RAM,% RAM libre,Comprobar Root,Puerto SSH,Puerto HTTP,Puerto SMTP - IMAP,Ultimo Logon
+192.168.1.28/24,ldap.29asix.com,08:00:27:01:ba:6f,jvaliente-u2204,AMD Ryzen 7 5800H with Radeon,3193.918,4,"3,8Gi","49,1251",True,True,True,False,00:59-Fri-23-Feb
